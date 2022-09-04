@@ -81,6 +81,7 @@ class ActiveRecord::Base
   class << self
     #alias [] find
     def [](spec)
+      #lets you do Class["name"] instead of the more verbose Class.find_by(name: "name")
       norm = find_by_id(spec)
       return norm if norm
 
