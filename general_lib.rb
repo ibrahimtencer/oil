@@ -72,6 +72,7 @@ class Float
 end
 
 class Symbol
+  #for easily composing symbols as Procs
   def << other
     -> x {self.to_proc[other.to_proc[x]]}
   end
