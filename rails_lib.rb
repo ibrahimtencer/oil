@@ -1,5 +1,7 @@
 #modifications for Rails
 
+require 'active_record'
+
 HIDE = "display:none;".freeze
 FLOATRIGHT = "float:right;".freeze
 BLOCK = {style: "display:block"}.freeze
